@@ -1,0 +1,764 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Monserrat', Tahoma, Geneva, sans-serif;
+}
+
+/*--------UTILITAIRES-----------*/
+
+.font-hades {
+    font-family: "HADES", sans-serif;
+}
+
+.large {
+    font-size: 3em;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.white {
+    color: white;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+@font-face {
+    font-family: "HADES";
+    src: url("../fonts/HADES.otf") format("opentype");
+}
+
+/*--------------ANIMATION-----------*/
+
+.anim {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    top: 400px;
+    height: 100%;
+}
+
+@-webkit-keyframes up {
+    from {
+        top: 400px;
+    }
+
+    to {
+        top: 0px;
+    }
+
+}
+
+@keyframes up {
+    from {
+        top: 400px;
+    }
+
+    to {
+        top: 0px;
+    }
+
+}
+
+/*--------------ANIMATION Menu burger-----------*/
+
+.anim-burger {
+    background-color: yellow;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -1350px;
+    left: 0;
+    z-index: -1;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+}
+
+.burger:hover + .anim-burger {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    -webkit-animation: down 1s ease;
+            animation: down 1s ease;
+}
+
+@-webkit-keyframes down {
+    from {
+        top: -1350px;
+    }
+
+    to {
+        top: 15vh;
+    }
+}
+
+@keyframes down {
+    from {
+        top: -1350px;
+    }
+
+    to {
+        top: 15vh;
+    }
+}
+
+/*---------------------------------*/
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: large;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: darkred;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bg-red {
+    background-color: darkred;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-purple {
+    background-color: rebeccapurple;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.font-size {
+    font-size: 3em;
+}
+
+
+/*---------PREFAB---------*/
+
+.prefab-main {
+    height: 70vh;
+    position: relative;
+}
+
+.parent-section {
+    width: 90%;
+    height: 110%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+}
+
+.wall {
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.titre-bar {                                 /* => Barre top et bottom*/
+    color: white;
+    background-color: black;
+    font-size: 4em;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/*-----------DEBUT HEADER-----------*/
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+}
+
+.top-bar {
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo-header {
+    width: 300px;
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    z-index: 1;
+}
+
+.list-gods {
+    font-size: 2.5em;
+}
+
+#list {
+    width: 50%;
+}
+
+#list li {
+    margin: 10% 0;
+    position: relative;
+    list-style: none;
+}
+
+ul li a::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+#box-zagreus::after {
+    background-image: url("../media/images/zagreus.png");
+    left: 0;
+}
+
+#box-zeus::after {
+    background-image: url("../media/images/Zeus.png");
+    right: 0;
+}
+
+#box-thanatos::after {
+    background-image: url("../media/images/Thanatos.png");
+    left: 0;
+}
+
+#box-megara::after {
+    background-image: url("../media/images/Megaera.png");
+    right: 0;
+}
+
+#list { 
+    text-align: center;
+}
+
+/*---------MENU BURGER-----------*/
+
+.burger {   
+    margin: 25px 25px 0 0;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 90;
+}
+
+.burger-line {
+    width: 50px;
+    height: 4px;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.line-one {
+    -webkit-transform-origin: top left 0;
+        -ms-transform-origin: top left 0;
+            transform-origin: top left 0;
+}
+
+.line-three {
+    -webkit-transform-origin: bottom left 0;
+        -ms-transform-origin: bottom left 0;
+            transform-origin: bottom left 0;
+}
+
+.burger:hover .line-one {
+    -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotateZ(45deg);
+    width: 42px;
+}
+
+.burger:hover .line-two {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+}
+
+.burger:hover .line-three {
+    -webkit-transform: rotateZ(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotateZ(-45deg);
+    width: 42px;
+}
+
+/*---------FIN HEADER----------*/
+
+/*---------DEBUT MAIN------------*/
+
+/*---------Top MAIN--------------*/
+
+#img_topwall {
+    background-image: url("../media/images/wall.jpg");
+    background-position: top 100px center;
+}
+
+#text-hades h2, #text-zagreus h2, #text-thanatos h2, #text-megaera h2 {
+    margin: 40px;
+}
+
+/*---------MAIN ZAGREUS---------*/
+
+#img-zagreus {
+    position: absolute;
+    bottom: -3px;
+    left: -30px;
+    width: 35%;
+    min-width: 400px;
+}
+
+#text-zagreus {
+    width: 500px;
+    margin-left: 40%;
+    color: yellow;
+    text-align: right;
+}
+
+/*---------MAIN HADES------------*/
+
+#text-hades {
+    margin-left: 5%;
+    width: 500px;
+    color: darkred;
+}
+
+#img-hades {
+    position: absolute;
+    bottom: -3px;
+    right: -70px;
+    width: 40%;
+    min-width: 450px;
+}
+
+/*---------MAIN THANATOS-----------*/
+
+#img-thanatos {
+    position: absolute;
+    bottom: -3px;
+    left: -100px;
+    width: 600px;
+}
+
+#text-thanatos {
+    width: 300px;
+    margin-left: 60%;
+    text-align: right;
+}
+
+/*-------MAIN MAGAERA--------*/
+
+#text-megaera {
+    width: 300px;
+    margin-left: 10%;
+    color: white;
+}
+
+#img-megaera {
+    position: absolute;
+    right: -80px;
+    bottom: 44px;
+    width: 490px;
+}
+
+/*--------------FIN MAIN-----------*/
+
+/*------------DEBUT FOOTER-----------*/
+
+#wall_footer {
+    background-image: url("../media/images/fond2.jpeg");  
+}
+
+.img_god {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 30px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.img_god > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.img_god > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.img_god > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.img_god > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.img_god > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.img_god > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.contain_god {
+    margin: 0 auto;
+    height: 40vh;
+    max-height: 40vh;
+    position: relative;
+    width: 100%;
+}
+
+#text_athena {
+    background-color:cornflowerblue;
+    color:darkkhaki;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#img_athena img, #img_zeus img, #img_arthemis img, #img_demeter img, #img_poseidon img, #img_ares img{
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+#img_athena:hover .anim {
+    -webkit-animation: up 1s ease;
+            animation: up 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+#text_zeus {
+    background-color: darkkhaki;
+    color:yellow;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;    
+}
+
+#img_zeus:hover .anim {
+    -webkit-animation: up 1s ease;
+            animation: up 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+#text_arthemis {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
+}
+
+#img_arthemis:hover .anim {
+    -webkit-animation: up 1s ease;
+            animation: up 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+#text_demeter {
+    background-color: aqua;
+    color:brown;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
+}
+
+#img_demeter:hover .anim {
+    -webkit-animation: up 1s ease;
+            animation: up 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+#text_poseidon {
+    background-color:darkolivegreen;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
+}
+
+#img_poseidon:hover .anim {
+    -webkit-animation: up 1s ease;
+            animation: up 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+#text_ares {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
+}
+
+#img_ares:hover .anim {
+    -webkit-animation: up 1s ease;
+            animation: up 1s ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+/*------------END FOOTER-----------*/
+
+.contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 10%;
+}
+
+#img_athena .anim p, #img_zeus p, #img_arthemis p, #img_demeter p, #img_poseidon p, #img_ares p {
+    margin: 50px 60px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 912px) {
+
+    .burger-line {
+        background-color: black;
+    }
+
+    ul li a::after {
+        width: 100px;
+        height: 100px;
+    }
+
+    #box-zagreus::after {
+        left: -60px;
+    }
+
+    #box-zeus::after {
+        right: -50px;
+    }
+
+    #box-thanatos::after {
+        left: -60px;
+    }
+
+    #box-megara::after {
+        right: -50px;
+    }
+
+    .top-bar {
+        background-color: rgba(207,171,0,255);
+    }
+
+    .prefab-main {
+        height: auto;
+    }
+
+    #logo-header {
+        width: 150px;
+        top: 20px;
+        left: 10px;
+    }
+
+    #img_topwall {
+        background-image: url("../media/images/mobileWPHades.jpg");
+    }
+
+    /**********ZAGREUS**************/
+
+   .parent-section {
+        height: unset;
+   } 
+
+    .parent-section:nth-of-type(odd) {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        width: 100%;
+        
+    }
+
+    #text-zagreus p {
+        display: none;
+    }
+
+    #text-zagreus {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        margin: 0px;
+    }
+
+    #img-zagreus {
+        width: 70%;
+        position: static;
+        min-width: 0px;
+    }
+
+    /**********HADES**************/
+
+    article:nth-of-type(2) > .parent-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #text-hades p {
+        display: none;
+    }
+
+    #text-hades {
+        margin: 0px;
+    }
+
+    #img-hades {
+        width: 60%;
+        height: 100%;
+        position: static;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-width: 0px;
+    }
+
+    /**********THANATOS**************/
+
+    #text-thanatos p {
+        display: none;
+    }
+
+    #text-thanatos {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        margin: 0px;
+    }
+
+    #img-thanatos {
+        position: static;
+        width: 70%;
+        min-width: 0px;
+    }
+
+    /**********MEGAERAWARAAA**************/
+
+    #img-megaera {
+        display: none;
+    }
+
+    #text-megaera {
+        margin-bottom: 15%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    /**********FOOTER**************/
+
+    h2:nth-last-of-type {
+        display: none; 
+    }
+
+    #Sbar {
+        display: none;
+    }
+
+    #wall_footer {
+        display: none;
+    }
+}

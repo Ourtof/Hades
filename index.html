@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8"> <!-- pour les caractères spéciaux -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Pour que le code ressemble à qqch sur IE/Edge -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"> <!-- Toujours adapter à la largeur de l'appareil, mise à l'échelle -->
+    <meta name="referrer" content="origin-when-cross-origin"> <!-- Autorise l'interrogation asynchrone uniquement sur lui même -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Bibliothèque obligatoire pour Apple -->
+    <meta name="msapplication-tap-highlight" content="no" /> <!-- Désactive le taplight pour les mobiles (truc bleu quand on clique) -->
+    <meta name="description" content="Panthéon grec"> <!-- Description sur google pour le référencement -->
+    <title>Dieux anciens d'une mythologie oubliée</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image favicon/png" href="media/images/favicon.ico"/>
+</head>
+<body>
+<header>
+
+    <nav>
+        <div class="top-bar">
+            
+            <div id="logo-header">
+                <img src="media/images/logo.png" alt="wallpaper">
+            </div>
+            
+            <div class="burger absolute">
+                <div class="burger-line line-one"></div>
+                <div class="burger-line line-two"></div>
+                <div class="burger-line line-three"></div>
+            </div>
+            <div class="anim-burger">
+                <ul id="list">
+                    <li><a href="#" id="box-zagreus" class="font-hades list-gods">ZAGREUS</a></li>
+                    <li><a href="#" id="box-zeus"class="font-hades list-gods">ZEUS</a></li>
+                    <li><a href="#" id="box-thanatos" class="font-hades list-gods">THANATOS</a></li>
+                    <li><a href="#" id="box-megara" class="font-hades list-gods">MEGARA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="wall" id="img_topwall">
+    </div>
+    
+</header>
+<main>
+
+    <h2 class="titre-bar font-hades">LES PERSONNAGES</h2>
+
+    <article class="prefab-main bg-red flex-end">
+        <div class="parent-section">
+            <div id="img-zagreus">
+                <img src="media/images/zagreus.png" alt="kami">
+            </div>
+            <div id="text-zagreus">
+                <h2 class="font-hades large">ZAGREUS</h2>
+                <p>Zagreus a toujours eu le sentiment qu'il n'avait pas sa place dans la Maison d'Hadès ; récemment, il a décidé, contre la volonté de son père, de s'échapper du Monde des Morts, peu importe le nombre d'essais qu'il lui faudrait faire. Il est aidé et encouragé dans son voyage principalement par son gardien Nyx et son mentor Achille. D'autres personnes en dehors de la maison d'Hadès, comme Sisyphe, Charon et les Olympiens, lui offrent parfois leur aide.</p>
+            </div>
+        </div>
+    </article>
+    <article class="prefab-main bg-yellow">
+        <div class="parent-section">
+            <div id="text-hades">
+                <h2 class="font-hades large">HADES</h2>
+                <p>Hadès est sévère, sérieux et dévoué à son travail. Il est montré, dans les Souvenirs qui jouent avant certaines tentatives d'évasion, comme ayant été strict et souvent cruel avec Zagreus pendant son enfance. Il a employé Achille pour enseigner le combat à Zagreus et lui donner une "direction plus ferme de la vie". Entre-temps, Hadès semble avoir laissé à Nyx une grande partie des soins et de l'éducation de Zagreus.</p>
+            </div>
+            <div id="img-hades">
+                <img src="media/images/hades.png" alt="enfer">
+            </div>
+        </div>
+    </article>
+    <article class="prefab-main bg-purple flex-end">
+        <div class="parent-section">
+            <div id="img-thanatos">
+                <img src="media/images/Thanatos.png" alt="mort">
+            </div>
+            <div id="text-thanatos">
+                <h2 class="font-hades large">THANATOS</h2>
+                <p>Thanatos apparaît parfois au début de rencontres régulières et met Zagreus au défi de voir lequel d'entre eux peut abattre le plus de nuances. Il est immunisé contre les dégâts pendant le concours, mais ne ripostera pas s'il est frappé (il se plaindra simplement). Si Zagreus tue plus d'ennemis que Thanatos ou fait un total égal, il lui attribuera un Centaure Coeur en plus de la récompense habituelle.</p>
+            </div>
+        </div>
+    </article>
+    <article class="prefab-main bg-blue">
+        <div class="parent-section">
+            <div id="text-megaera">
+                <h2 class="font-hades large">MEGAERA</h2>
+                <p>Après sa première défaite, Megaera rejoindra la Maison d'Hadès en tant que personnage avec lequel on peut interagir, bien qu'elle tente toujours d'empêcher Zagreus d'entrer dans Asphodel. On la trouvera en train de boire dans le salon de la Maison, mais seulement après une course dans laquelle elle a été vaincue. Si le salon n'a pas encore été rouvert, elle traînera plutôt dans le couloir de l'autre côté de la porte de Zagreus, là où Nyx se tient habituellement.</p>
+            </div>
+            <div id="img-megaera">
+                <img src="media/images/Megaera.png" alt="femme">
+            </div>
+        </div>
+    </article>
+    
+    <h2 id="Sbar" class="titre-bar font-hades">LES DIEUX DE L'OLYMPE</h2>
+    
+    <section id="wall_footer" class="wall">
+
+        <div class="img_god">
+            <div id="img_athena" class="contain_god hidden">
+                <img src="media/images/Athena.png" alt="guerre">
+                <p id="text_athena" class="font-hades font-size">ATHENA</p>
+                <div class="anim">
+                    <p class="white">Athéna est une résidante de l'Olympe. Athéna est la déesse de la sagesse, les conseils qu'elle prodigue sont sages et extrêmement utile pour tout à chacun. Elle est très appréciée.</p>
+                </div>
+            </div>
+
+            <div id="img_zeus" class="contain_god hidden">
+                <img src="media/images/Zeus.png" alt="foudre">
+                <p id="text_zeus" class="font-hades font-size">ZEUS</p>
+                <div class="anim">
+                    <p class="white">Zeus est un Dieu résidant à l'Olympe. Il est dit que Zeus est le Dieu des Dieux. Etant leur chef, leur roi, il règne sur l'Olympe d'une main de fer. La foudre le représentant.</p>
+                </div>
+            </div>
+
+            <div id="img_arthemis" class="contain_god hidden">
+                <img src="media/images/Artemis.png" alt="chasse">
+                <p id="text_arthemis" class="font-hades font-size">ARTHEMIS</p>
+                <div class="anim">
+                    <p class="white">Arthemis, de mémoire, est la déesse de la chasse. Tout en respectant les animaux, elle pose des pièges pour les animaux, s'en nourrit, mais les respect au maximum.</p>
+                </div>
+            </div>
+
+            <div id="img_demeter" class="contain_god hidden">
+                <img src="media/images/Demeter.png" alt="demet">
+                <p id="text_demeter" class="font-hades font-size">DEMETER</p>
+                <div class="anim">
+                    <p class="white">Demether est une déesse de l'Olympe. Elle y réside et je ne sais plus ce qu'elle fait ou quoi, mes connaissances sur elle sont limitées, donc je pose ça là.</p>
+                </div>
+            </div>
+
+            <div id="img_poseidon" class="contain_god hidden">
+                <img src="media/images/Poseidon.png" alt="océan">
+                <p id="text_poseidon" class="font-hades font-size">POSEIDON</p>
+                <div class="anim">
+                    <p class="white">Poseidon est le Dieu des océans. C'est lui qui y dicte les lois, qui choisis quelle espèce peut y prospérer ou non. Sinon son courroux se déchaîne et provoque des tempêtes.</p>
+                </div>
+            </div>
+
+            <div id="img_ares" class="contain_god hidden">
+                <img src="media/images/Ares.png" alt="guerrebis">
+                <p id="text_ares" class="font-hades font-size">ARES</p>
+                <div class="anim">
+                    <p class="white">Ares est le Dieu de la guerre de l'Olympe. Contrairement à Athéna, plus stratégique, le domaine d'Arès est celui des aspects physiques, violents et indomptables de la guerre.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</main>
+</body>
+</html>
